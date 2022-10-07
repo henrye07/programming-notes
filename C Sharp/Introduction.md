@@ -21,6 +21,10 @@ Cuando una variable es del tipo privado, se recomienda la siguiente sintaxis en 
 ```c#
 private var _name;
 ```
+Tambien podemos asignarle un decirle a una variable que puede recibir un valor null o vacio.
+```c#
+public int? name;
+```
 # Print/Set Value
 La manera de imprimir un valor es la siguiente:
 ```c#
@@ -169,3 +173,9 @@ public class Cuadrado : Cuadrilatero
 	}
 }
 ```
+
+# Install Package
+Para instalar paquetes, Visual Studio provee la herramienta NuGet Package que permite instalar por medio de consola o interfaz los paquetes que se desee incorporar en el proyecto.
+
+Una vez se crea el proyecto, esta opcion aparece en **Tool > NuGet Package Manager > ...**
+
