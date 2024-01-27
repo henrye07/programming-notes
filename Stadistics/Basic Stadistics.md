@@ -1,3 +1,11 @@
+# Data Types in Statistics
+## Categorical
+	- Nominal: Doesn't have an order. Ex: Gender of a person (Male or Female)
+	- Ordinal: Has some order in place. Ex: Grades of students(1st Division, 2nd division, 3th division)
+
+## Numerical
+	- Disccrete: Discreta data can only take specific values. They are distinct and separate. Ex: The number of students in a class. We can't have a half a student
+	- Continuos: Continuos data can take any value. Ex: A person's height. Not just certain fixed heights.
 # Pearson Correlation
 Measure the relation between 2 categories/variables
 	There are 2 main params in this method:
@@ -30,7 +38,7 @@ Anova assume that the mean of all groups is the same.
 Calculate how many is the desviation between the real mean and current mean(Suppuest)
 
 # Mean Square Error (MSE)
-It's the mean of the square difference between the true value and the predict value for the regression model
+It's the mean of the square difference between the true value and the predict value for the regression model.
 
 Penalty the small error values that drive to over estimate the how many bad is the model
 
@@ -42,7 +50,7 @@ Worst is the model if the value is high
 
 # Root Mean Square Error (RMSE)
 
-It's preferible in some case, because first, realized the square error and later, the mean. For that the mean do a high penalizations if the error is big. It's util when we don't have a big errors.
+It's preferible in some case, because first, realized the square error and later, the mean. For that the mean do a high penalizations if the error is big. It's util when we don't have a big errors. It means, when large errors are undesired.
 
 $$
  RMSE = \sqrt{{1 \over n} \sum{(Y- \hat{Y})^2 }} = \sqrt{MSE}
@@ -88,6 +96,46 @@ When the model is fit to learn the specific cases (Train) and that can't recogni
 # Underfitting (High Bias)
 
 When the data are too little that is no able to create a model.
+
+# Strategies to avoid overfitting
+
+We can combat the overfitting by reducing the complexity of our model, this can be reach by:
+	- Using fewer layers (shallower networks), fewer neurons per layer (narrow networks)
+	- Using Dropouts
+	- Using Regularisation
+	- Early Stopping in some cases
+
+## Tackling Overfitting using Early Stopping, Regularization and Dropouts
+
+### Early Stopping
+
+When training a large network, there will be a point during training when the model will stop generalizing and start memorizing or learning the noise in the training dataset.
+
+Every end of epoch, the algorithm check and stop training if validation accuracy decrease steadily, while train accuracy increases.
+![[Early_Stopping.png]]
+
+The Early Stopping is recommended for use in this case/tasks:
+ - Algorithm to optimize the cost function
+ - Prevent overfitting
+### Regularization
+
+The regularization is a a technique that makes slight modifications to the learning algorithm such that the model generalizes better, it means, the model has the ability to adapt properly to new, previously or unseen data.
+
+![[Regularization.png]]
+
+### DropOut
+
+This is the way as work this technique:
+	- We assign a dropout rate, which represents the percentage of neurons to drop
+	- At each stage, we remove random neurons according to the predefined percentage.
+	- We calculate the final output according to the combination of the results from the remaining neurons.
+
+With this technique, all neurons will have the chance to vote and will be obliged to answer correctly to decrease the mode loss.
+![[DropOut.png]]
+
+By dropping a unit out, we mean temporarily removing it from the network, along with all its incoming and outgoing connections.
+
+It can be used with most layers, such as dense, fully connected layers. Dropout may be implemented on any or all hidden layers in the network as well as the visible or input layer.
 
 # Metrics Classification Model
 
