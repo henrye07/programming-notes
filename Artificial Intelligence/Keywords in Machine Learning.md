@@ -1,15 +1,15 @@
 Machine learning can be known as a magical box that help us to predict whatever we want.
 
-In Machine learning there are some differents terminology that can help for train, test, and create models for any pourpouse. This are known as Keywords in ML:
+In Machine learning there are some different terminology that can help for train, test, and create models for any purpose. This are known as Keywords in ML:
 
-- Features or variables: All the data in the dataset are features.
-- Target / Label Variable: It is the feature of a dataset about which you want to gain a deeper understanding.
-- Predictor / Input variables: They are sometimes called Predictor Variables or Descriptors as well. This can be the features with the want we want to extract the information for train our models.
-- Dependent and Independent Variables: The input variables are known as the independent variables, and the target variable is known as the dependent variable.
+- **Features or variables:** All the data in the dataset are features.
+- **Target / Label Variable:** It is the feature of a dataset about which you want to gain a deeper understanding.
+- **Predictor / Input variables:** They are sometimes called Predictor Variables or Descriptors as well. This can be the features with the want we want to extract the information for train our models.
+- **Dependent and Independent Variables:** The input variables are known as the independent variables, and the target variable is known as the dependent variable.
 
-Variables = Features
-Input Variables = Attributes = Predictors = Descriptors = Independent variables 
-Target Variables = Labels = Outcomes = Dependent Variables
+**Variables = Features**
+**Input Variables = Attributes = Predictors = Descriptors = Independent variables** 
+**Target Variables = Labels = Outcomes = Dependent Variables**
 
 # Train and Test Sets
 

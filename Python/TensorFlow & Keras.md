@@ -11,7 +11,7 @@ import tensorflow as tf
 
 # Keras
 
-We can use keras, importing the library from **TensorFlow**
+We can use **Keras**, importing the library from **TensorFlow**
 
 ```python
 from tensorflow import keras
